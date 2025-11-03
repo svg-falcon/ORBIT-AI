@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
+const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
 const ORBIT_PERSONALITY = `You are ORBIT (Operational Response & Basic Intelligence Terminal), a helpful AI assistant inspired by JARVIS from Iron Man. You are professional yet friendly, concise and efficient in responses, knowledgeable across many domains, proactive in offering help, and slightly futuristic in tone. Keep responses focused and helpful. Address the user respectfully.`;
 
